@@ -289,3 +289,259 @@ span.bi {
         width: 100%;
     }
 }
+
+/* services */
+.services {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+.services h1 {
+    padding-bottom: .75cm;
+}
+  
+.service-item {
+    display: inline-block;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px yellow, 0 1px 2px orange;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    position: relative;
+}
+  
+.service-item:hover {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    animation-name: example;
+    animation-duration: 0.25s;
+    border-left: 8px solid orangered;
+    box-shadow: 0 14px 28px #3D0C02, 0 10px 10px orangered;
+}
+  
+.service-item .img {
+    width: 180px;
+    height: 180px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+  
+.service-item .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.service-item .details {
+    margin-top: 20px;
+    text-align: center;
+}
+  
+.service-item .icon {
+    background-color: orangered;
+    color: white;
+    font-size: 36px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+}
+  
+.service-item h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+  
+.service-item h6 {
+    font-size: 16px;
+    color: #666;
+}
+  
+@keyframes example {
+    0%   { border-left: 2px solid yellow; }
+    25%  { border-left: 3px solid orange; }
+    50%  { border-left: 4px solid orangered; }
+    100% { border-left: 5px solid #3D0C02; }
+}
+
+/* pricing */
+#pricing {
+    padding-bottom: 1cm;
+}
+
+.pricing .pricing-item {
+    padding: 40px 40px;
+    background: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 4px solid orange;
+    border-radius: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.pricing .pricing-item:hover {
+    background-color: orangered; 
+    transform: scale(1.05);
+}
+
+.pricing .pricing-item:hover .pricing-header h3 {
+    color: white;
+}
+
+.pricing .pricing-header {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 0;
+    margin: -60px -40px 0;
+}
+
+.pricing h3 {
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 36px;
+    color: orangered;
+}
+
+.pricing h4 {
+    font-size: 48px;
+    color: black;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.pricing h4 sup {
+    font-size: 28px;
+}
+
+.pricing h4 span {
+    color: rgba(orange, 0.6);
+    font-size: 24px;
+}
+
+.pricing ul {
+    padding: 30px 0;
+    list-style: none;
+    color: black;
+    text-align: left;
+    line-height: 20px;
+}
+
+.pricing ul li {
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.pricing ul i {
+    color: orange;
+    font-size: 36px;
+    padding-right: 3px;
+    line-height: 0;
+}
+
+.pricing ul .na span {
+    text-decoration: line-through;
+}
+
+.pricing-btn {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.pricing-btn a {
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: orangered;
+    border: 3px solid green;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.pricing-btn a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: orange;
+    text-shadow: 2px 2px #8B4000;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.pricing-btn a:hover span {
+    width: 100%;
+    text-shadow: 2px 2px red;
+}
+
+.pricing-btn a:hover {
+    color: red;
+}
+
+.pricing .pricing-item.featured {
+    border-color: orangered;
+}
+
+@media (max-width: 1024px) {
+.pricing ul li {
+    padding: 0;
+    }
+}
+
+/* menu */
+#menu {
+    text-align: center;
+    background-color: whitesmoke;
+    padding-bottom: 2cm;
+}
+
+.menu-item {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.menu-item h5 {
+    margin: 1cm 0;
+    font-size: 50px;
+}
+
+.menu-item p {
+    padding: 0 1cm;
+}
+
+#menuCarousel {
+    margin-top: 2cm;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #3D0C02;
+}
+
+@media screen and (max-width: 768px) {
+    .menu-item {
+        max-width: 90%;
+    }
+}
