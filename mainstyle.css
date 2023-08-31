@@ -937,7 +937,10 @@ span.bi {
     color: #3D0C02;
     margin: 0 0 70px;
 }
-  
+#team {
+    padding-bottom: 5cm;
+}
+
 #team .container {
     display: flex;
     justify-content: center;
