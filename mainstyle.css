@@ -930,6 +930,73 @@ span.bi {
   }
 }
 
+/* team */
+#team .section-heading {
+    text-align: center;
+    font-size: 64px;
+    color: #3D0C02;
+    margin: 0 0 70px;
+}
+  
+#team .container {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+  
+#team .profile {
+    position: relative;
+    transition: all 0.3s;
+}
+  
+#team .profile:hover {
+    transform: translateY(25px);
+}
+  
+#team .profile img {
+    max-width: 100%;
+    border-radius: 50%;
+    border: 5px solid #3D0C02;
+    filter: drop-shadow(-20px 0 10px orange);
+    cursor: pointer;
+}
+
+#team .profile:not(:first-child) img {
+    margin-left: -20px;
+}
+  
+#team .profile .name {
+    position: absolute;
+    background-color: orangered;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 100px;
+    bottom: -80px; left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -50px);
+    letter-spacing: 1px;
+    font-size: 20px;
+    opacity: 0;
+    transition: all 0.3s;
+}
+  
+#team .profile .name::before {
+    content: "";
+    position: absolute;
+    width: 15px; height: 15px;
+    background-color: orangered;
+    top: 0; left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+  
+#team .profile img:hover + .name {
+    opacity: 1;
+    transform: translateX(-50%);
+    box-shadow: 0 10px 20px orangered;
+}
+
 /* footer */
 #footer {
     padding: 100px 0 20px;
