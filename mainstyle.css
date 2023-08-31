@@ -546,7 +546,382 @@ span.bi {
     }
 }
 
+/* gallery */
+#gallery {
+    text-align: center;
+    background-color: white;
+    padding-bottom: 2cm;
+}
 
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: .25cm;
+    margin-top: 1cm;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    aspect-ratio: 4/3;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}
+
+.gallery-button {
+    text-align: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.gallery-button a {
+    display: inline-block;
+    text-decoration: none;
+    color: orangered;
+    border: 2.75px solid green;
+    padding: 12px 40px;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.gallery-button a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: orange;
+    text-shadow: 2px 2px #8B4000;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.gallery-button a:hover span {
+    width: 100%;
+    text-shadow: 2px 2px #8B4000;
+}
+
+.gallery-button a:hover {
+    color: orangered;
+}
+
+/* faq */
+@media (max-width: 991px) {
+    .faq {
+      padding: 0;
+    }
+}
+
+#faq {
+    background: whitesmoke;
+}
+
+.faq .container-fluid {
+    padding-bottom: 1.75cm;
+}
+
+.content.px-xl-5 {
+    padding-bottom: 0;
+}
+
+.faq .content h3 {
+    font-weight: 400;
+    font-size: 34px;
+    color: orange;
+    text-shadow: .5px .5px orangered;
+}
+
+.faq .content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.faq .content p {
+    font-size: 15px;
+    color: black;
+}
+
+.faq .img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+}
+
+.faq .accordion-item {
+    border: 0;
+    margin-top: 15px;
+    box-shadow: 0px 5px 25px 0px orange, 0.06;
+}
+
+.faq .accordion-collapse {
+    border: 0;
+}
+
+.faq .accordion-button {
+    padding: 15px 40px 20px 60px;
+    font-weight: 600;
+    border: 0;
+    font-size: 18px;
+    color: black;
+    text-align: left;
+    background: white;
+    box-shadow: none;
+    border-radius: 5px;
+}
+
+.faq .accordion-button:not(.collapsed) {
+    color: black;
+    border: 0;
+    box-shadow: none;
+}
+
+.faq .question-icon {
+    position: absolute;
+    top: 14px;
+    left: 25px;
+    font-size: 20px;
+    color: greenyellow;
+    text-shadow: 2px 2px green;
+}
+
+.faq .accordion-button:after {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: yellow;
+}
+
+.faq .accordion-body {
+    padding: 0 30px 25px 60px;
+    border: 0;
+    box-shadow: none;
+}
+
+/* testimonials */
+#testimonials {
+    width: 100%;
+    padding: 2cm 0;
+    background-color: white;
+}
+
+.testimonials-row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.testimonial-col {
+    flex-basis: 28%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px #8B4000;
+    cursor: pointer;
+    transform: .5s;
+}
+
+.testimonial-col p {
+    font-size: 14px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.user img {
+    width: 60px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+.user-info .bi {
+    margin-left: 10px;
+    color: orangered;
+    font-size: 20px;
+}
+
+.user-info small {
+    color: orangered;
+}
+
+.testimonial-col:hover {
+    transform: translateY(-7px);
+}
+
+.testimonial-btn {
+    margin: 80px auto 0;
+    text-align: center;
+}
+
+.testimonial-btn a {
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: orangered;
+    border: 3px solid green;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.testimonial-btn a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: orange;
+    text-shadow: 2px 2px #8B4000;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.testimonial-btn a:hover span {
+    width: 100%;
+    text-shadow: 2px 2px red;
+}
+
+.testimonial-btn a:hover {
+    color: red;
+}
+
+@media screen and (max-width: 1080px) {
+    .testimonial-col {
+        flex-basis: 100%;
+    }
+    
+    .testimonial-btn a:hover span {
+        width: 100%;
+    }
+}
+
+/* quote/form */
+#quote {
+    background: whitesmoke;
+    padding: 2cm .75cm;
+}
+
+.title-text {
+    padding-bottom: 0;
+    margin-bottom: 1cm;
+}
+
+.text-center {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#quote .container-content .input-box {
+  height: 55px;
+  width: 100%;
+  margin: 12px 0;
+}
+
+#quote .container-content .input-box input,
+#quote .container-content .input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: white;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+
+#quote .container-content .message-box {
+  min-height: 150px;
+}
+
+#quote .container-content .input-box textarea {
+  padding-top: 15px;
+}
+
+#quote .button {
+    margin: 80px auto 0;
+    text-align: center;
+}
+
+#quote .button a {
+    width: 150px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 12px 0;
+    color: orangered;
+    border: 3px solid green;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+#quote .button a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: orange;
+    text-shadow: 2px 2px #8B4000;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+#quote .button a:hover span {
+    width: 100%;
+    text-shadow: 2px 2px red;
+}
+
+#quote .button a:hover {
+    color: red;
+}
+
+@media (max-width: 1080px) {
+    #quote .button a:hover span {
+        width: 100%;
+    }
+}
+
+@media (max-width: 950px) {
+    #quote .container {
+    width: 90%;
+    padding: 30px 40px 40px 35px;
+  }
+}
 
 /* footer */
 #footer {
