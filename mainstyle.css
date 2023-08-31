@@ -931,23 +931,13 @@ span.bi {
 }
 
 /* team */
-#team .section-heading {
-    text-align: center;
-    font-size: 64px;
-    color: #3D0C02;
-    margin: 0 0 70px;
-}
 #team {
-    padding-bottom: 5cm;
-    height: 100vh;
+    height: 60vh;
 }
 
 #team .container {
     display: flex;
     justify-content: center;
-    width: 90%;
-    max-width: 1440px;
-    margin: 0 auto;
 }
   
 #team .profile {
@@ -962,19 +952,15 @@ span.bi {
 #team .profile img {
     max-width: 100%;
     border-radius: 50%;
-    border: 5px solid #3D0C02;
+    border: 5px solid whitesmoke;
     filter: drop-shadow(-20px 0 10px orange);
     cursor: pointer;
-}
-
-#team .profile:not(:first-child) img {
-    margin-left: -20px;
 }
   
 #team .profile .name {
     position: absolute;
     background-color: orangered;
-    color: #fff;
+    color: #3D0C02;
     padding: 15px 30px;
     border-radius: 100px;
     bottom: -80px; left: 50%;
