@@ -939,6 +939,7 @@ span.bi {
 }
 #team {
     padding-bottom: 5cm;
+    height: 100vh;
 }
 
 #team .container {
