@@ -501,18 +501,24 @@ span.bi {
 }
 
 /* menu */
+/* menu */
 #menu {
     text-align: center;
     background-color: whitesmoke;
     padding-bottom: 2cm;
 }
 
+#menu h1 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 .menu-item {
     max-width: 500px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 4px 6px #3D0C02;
     text-align: left;
 }
 
@@ -520,19 +526,22 @@ span.bi {
     max-width: 100%;
     height: auto;
     display: block;
+    padding-top: .25cm;
 }
 
 .menu-item h5 {
     margin: 1cm 0;
-    font-size: 50px;
+    font-size: 30px;
+    text-align: center;
 }
 
 .menu-item p {
     padding: 0 1cm;
+    text-align: center;
 }
 
 #menuCarousel {
-    margin-top: 2cm;
+    margin-top: 1cm;
 }
 
 .carousel-control-prev-icon,
